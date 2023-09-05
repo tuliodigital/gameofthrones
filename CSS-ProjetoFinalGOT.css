@@ -3,15 +3,19 @@ font-family: playfair display;
 
 }
 
-.wrapperheader{
+.wrapper-header{
 color: white;
 background-color: #3B373F;
 }
 
 .header nav li{
 list-style-type: none;
+
 }
 
+.header__nav {
+    display: inline
+}
 
 .header__nav a:hover{
 background-color: black;
