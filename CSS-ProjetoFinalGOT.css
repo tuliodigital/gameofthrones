@@ -4,21 +4,29 @@ font-family: playfair display;
 }
 
 .wrapper-header{
-color: white;
+
 background-color: #3B373F;
+justify-content: space-between;
+
 }
 
-.header nav li{
+.header nav ul{
 list-style-type: none;
+display:flex;
+;
 
 }
 
 .header__nav {
-    display: inline
+    display: inline;
+    color: white;
+    padding: .75em 1.15em;
 }
 
 .header__nav a:hover{
 background-color: black;
+text-decoration: none;
+
 }
 
 .wrappersection{
