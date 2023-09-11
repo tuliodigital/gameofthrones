@@ -18,11 +18,19 @@
    </head>
 
 <body>
-    <div class="wrapper-header">
-        <header class="header_container">
-            <img src="Imagens/image 1.png" class="img-logo" alt="logotipo do Game Of Thrones">
+    
+    <header class="headerContainer headerFlex">
 
-            <nav class="wrapper-nav">
+        <div class="wrapper-logo">
+            <img src="Imagens/image 1.png" class="img-logo" alt="logotipo do Game Of Thrones">
+        </div>  
+
+        <div classe="wrapper-nav">
+            <nav>
+               <!-- <div class="Casas">Casas</div>
+               <div class="Personagens">Personagens</div>
+               <div class="Mapas">Mapa</div>
+               <div class="Produtos">Produtos</div> -->
                 <ul class="header-ul">
                     <li><a href="#">Casas</a></li>
                     <li><a href="#">Personagens</a></li>
@@ -30,26 +38,30 @@
                     <li><a href="#">Produtos</a></li>
                 </ul>
             </nav>
-                
-        </header>
-    </div>
+        </div>
+           
+    </header>
+    
 
-    <div class="wrapper-main">
-        <main>
-            <h1 class="TextMain Título" >Explore o mundo de Westeros</h1>
-            <p class="TextMain">Junte-se a nós na jornada épica através dos Sete Reinos e Além da Muralha. Nossa Wiki Game of Thrones oferece um tesouro de conhecimento sobre as Casas Nobres, personagens intrigantes, batalhas lendárias e mistérios envolventes. Seja você um leal súdito ou um ávido estrategista, mergulhe nas profundezas desta enciclopédia e descubra os segredos que moldaram o destino de Westeros. Abrace o lema 'O inverno está chegando' e desvende os segredos gelados do Norte ou desafie o fogo dos dragões ao explorar as tramas ardilosas do Sul. A Wiki Game of Thrones aguarda, pronta para desvendar cada dobra do passado e cada mistério do futuro. Seja parte da história, contribua com seu conhecimento e desvende os enigmas desta terra de intriga e heroísmo. O Grande Jogo aguarda; você está preparado?</p>
+    
+        <main class="wrapper-main">
+            <div class="Titulo">
+            <h1>Explore o mundo de Westeros</h1></div>
+            <div class="Paragrafo"> 
+            <p>Junte-se a nós na jornada épica através dos Sete Reinos e Além da Muralha. Nossa Wiki Game of Thrones oferece um tesouro de conhecimento sobre as Casas Nobres, personagens intrigantes, batalhas lendárias e mistérios envolventes. Seja você um leal súdito ou um ávido estrategista, mergulhe nas profundezas desta enciclopédia e descubra os segredos que moldaram o destino de Westeros. Abrace o lema 'O inverno está chegando' e desvende os segredos gelados do Norte ou desafie o fogo dos dragões ao explorar as tramas ardilosas do Sul. A Wiki Game of Thrones aguarda, pronta para desvendar cada dobra do passado e cada mistério do futuro. Seja parte da história, contribua com seu conhecimento e desvende os enigmas desta terra de intriga e heroísmo. O Grande Jogo aguarda; você está preparado?</p>
+            </div>
         </main>
-    </div>
+    
 
-    <div class="wrapper-personagens-section">
+    <div class="wrapper-personagens">
         <section class="PersonagensGallery">
                 <!--Primeiro card-->
                 <div class="card">
                     <div class="img">
-                        <img src="/Ellipse 5.png" alt="Jon Snow">
+                        <img src="/Imagens/Mask group (Jon Snow).png" alt="Jon Snow">
                     </div>
                     <h3>Jon Snow</h3>
-                    <a href="#" target="_blank"></a>
+                    <!-- <a href="#" target="_blank"></a> -->
                     <div class="card-container">
                         <p>Criado como filho bastardo da Casa Stark, ele luta para encontrar seu lugar em um mundo de intrigas políticas e ameaças sobrenaturais, enquanto sua jornada épica o leva de humildes origens a líder destemido na luta contra o inverno implacável que se aproxima.</p>
                     </div>
@@ -58,10 +70,10 @@
             <!--Segundo card-->
             <div class="card">
                 <div class="img">
-                    <img src="/Ellipse 6.png" alt="Daenerys Targaryen">
+                    <img src="/Imagens/Mask group (Daenerys).png" alt="Daenerys Targaryen">
                 </div>
                 <h3>Daenerys Targaryen</h3>
-                <a href="#" target="_blank"></a>
+                <!-- <a href="#" target="_blank"></a> -->
                 <div class="card-container">
                     <p>Inicialmente exilada e vendida como esposa, ela emerge como a Mãe dos Dragões, determinada a libertar escravos e recuperar o trono de sua família. Sua jornada é uma narrativa poderosa de empoderamento e ambição em um mundo de fogo e gelo.</p>
                 </div>
@@ -70,10 +82,10 @@
             <!--Terceiro card-->
             <div class="card">
                 <div class="img">
-                    <img src="/Ellipse 7.png" alt="Cersei Lannister">
+                    <img src="/Imagens/Mask group (Cersei).png" alt="Cersei Lannister">
                 </div>
                 <h3>Cersei Lannister</h3>
-                <a href="#" target="_blank"></a>
+                <!-- <a href="#" target="_blank"></a> -->
                 <div class="card-container">
                     <p>Como membro da Casa Lannister, ela tece intricados jogos de política e intriga para manter sua família no Trono de Ferro, muitas vezes sacrificando moralidade em sua busca desenfreada pelo controle. Sua determinação cativante gera ambiguidade na trama..</p>
                 </div>
@@ -82,44 +94,47 @@
             <!--Quarto card-->
             <div class="card">
                 <div class="img">
-                    <img src="/Ellipse 8.png" alt="Ned Stark">
+                    <img src="/Imagens/Mask group (Ned).png" alt="Ned Stark">
                 </div>
                 <h3>Ned Stark</h3>
-                <a href="#" target="_blank"></a>
+                <!-- <a href="#" target="_blank"></a> -->
                 <div class="card-container">
                     <p>Como Senhor de Winterfell, ele luta para equilibrar suas responsabilidades familiares com sua busca pela verdade, o que o leva a descobertas perturbadoras sobre a linhagem real e ameaças iminentes. Seu caráter íntegro e destino trágico marcam profundamente o enredo.</p>
                 </div>
             </div>
 
-            <a href="#" target="_blank">Personagens</a>
+            <div class="BtnContainer">
+                <a href="#" target="_blank">Produtos</a>
+            </div>
 
         </section>
     </div>
 
-    <div class="wrapper-casas-container">
         <section class="CasasContainer">
             <!--Primeira Casa-->
-            <article>
-                <h3><img src="#" alt="Imagem da Daenerys representando a casa Targaryen">Targaryen</h3>
+            <article class="Casas-article">
+                <h3><img src="/Imagens/image Targaryen.png" alt="Imagem da Daenerys representando a casa Targaryen">Targaryen</h3>
                 <p>São descendentes de Valíria, uma cidade que foi misteriosamente destruída completamente. Fizeram sua casa na Pedra do Dragão, onde permaneceram até que decidiram conquistar Westeros</p>
             </article>
         
              <!--Segunda Casa-->
-             <article>
-                <h3><img src="#" alt="Imagem da família Stark">Stark</h3>
+             <article class="Casas-article">
+                <h3><img src="/Imagens/image Stark.png" alt="Imagem da família Stark">Stark</h3>
                 <p>Localizada em Winterfell, sua linhagem iniciou nos tempos antigos, junto aos Primeiros Homens, onde eram independentes e comandavam o norte com seus Reis do Inverno. </p>
             </article>
 
              <!--Terceira Casa-->
-             <article>
-                <h3><img src="#" alt="Imagem da família Lannister">Lannister</h3>
+             <article class="Casas-article">
+                <h3><img src="/Imagens/Image Lannister.png" alt="Imagem da família Lannister">Lannister</h3>
                 <p>Considerada uma das casas mais ricas de Westeros, os Lannister são os senhores das terras ocidentais e os Guardiões do Oeste. Um lema importante para esta casa é “Um Lannister sempre paga suas dívidas”.</p>
             </article>
 
-            <a href="#" target="_blank">Casas</a>
+            <div class="BtnContainer">
+                <a href="#" target="_blank">Casas</a>
+            </div>
 
         </section>
-    </div>
+  
 
     <div class="wrapper-produtos-section">
         <section class="ProdutosGallery">
@@ -186,14 +201,16 @@
                 </div>     
             </div>
 
+            <div class="BtnContainer">
             <a href="#" target="_blank">Produtos</a>
+            </div>
 
         </section>
     </div>
 
     <div class="wrapper-mapa">
-        <section class="MapaContainer">
-            <img src="Imagens/image 30.png" alt="Mapa de Westeros">
+        <section class="BtnContainer">
+            <!-- <img src="Imagens/image 15.png" alt="Mapa de Westeros"> -->
         
             <a href="#" target="_blank">Mapa</a>
 
@@ -201,8 +218,9 @@
     </div>
 
     <footer class="wrapper-ftr">
-        
-        <img href="Imagens/image 1.png" class="img-ftr" alt="Logo Game Of Thrones">
+        <div class="Imageftr">
+        <img src="Imagens/image 1.png" alt="logo game of thrones">
+        </div>
         
     </footer>
 
