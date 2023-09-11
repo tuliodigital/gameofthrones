@@ -9,6 +9,25 @@
 }
 /* Acima font e reset css*/
 
+h2{
+    letter-spacing: 0.5px;
+    color: white;
+}
+
+h1{
+    letter-spacing: 0.5px;
+}
+
+h3{
+    letter-spacing: 0.5px;
+    color: white;
+}
+
+p{
+    letter-spacing: 0.5px;
+    font-size: 16.5px;
+    color: white;
+}
 
 .logo{
     width: 230px;
@@ -17,12 +36,17 @@
 
 .menu{
     display: flex;
-    background-color: #3B373F;
+    background-image: linear-gradient(to right, #3B373F, #000000);
     justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 120px;
+    z-index: 1;
 }
+#pg-winter{
+    border-bottom: solid 1.4px;
+}
+
 .paginas-cabecalho{
     margin-right: 65px; 
 }
@@ -38,138 +62,222 @@
     font-size: 18px;
     font-weight: 400;
     transition:width 4s;
+    letter-spacing: 1px;
 }
 
 .paginas-cabecalho li a:hover{
     text-decoration: none;
-    color: white;
+    color: #c7c7c7c2;
     font-size: 18px;
     font-weight: 400;
     border-bottom: solid 1.4px;
+    border-color: #c7c7c7c2;
 }
 
 /* Acima header*/
-
-.secao1{
+.container-section1{
     width: 100%;
     position: relative;
     display: block;
 }
 
-.imagem-rei{
+#banner-principal{
     width: 100%;
-    position: relative;
     display: block;
 }
 
-.titulo1{
+.titulo-subtitulo{
+    width: 40%;
     position: absolute;
-    top:300px;
+    z-index: 1;
+    top:30%;
+    color: white;
     left: 75px;
-    font-size: 50px;
-    color: white;
+    height: 300px;  
 }
 
-.subtitulo1{
+.titulo-subtitulo h1{
+font-size: 50px;
+}
+
+.titulo-subtitulo p{
+    left: 10px;
     position: absolute;
-    top: 365px;
-    color: white;
-    left: 80px;
+    
 }
 
 /* Acima banner inicial e títuloh1/subtítulo*/
 
-.secao2{
+
+.frase-autor{
     width: 100%;
-    height: 170px;
-    background-color: #3B373F;
-    color: white;
+    height: 100px;
     display: flex;
-    align-items: center;
+    align-items: center;    
+    justify-content: center;
 }
 
-.secao2 p{
-text-align: center;
-margin: auto;
-font-size: 20px;
-line-height: 35px;
+.frase-autor p{
+    font-size: 18px;
 }
 
-/* Acima seção 2 frase citação*/
-
-.secao3{
-    background-color: #3B373F;
-    color: white;
-    padding: 0px 75px 75px 75px;
-    line-height: 25px;
+cite{
+    display: flex;
+    justify-content: center;
+    line-height: 2;
 }
 
-.secao3 h2{
-    margin-bottom: 20px;
+/* Acima Frase de citação*/
+
+.conteudo1{
+    width: 100%;
+    padding: 20px 70px 20px 80px;
 }
 
-/* Acima seção 3 até spoiler*/
+.conteudo1 h2{
+    padding-bottom: 25px;
+    font-size: 32px;
+}
+
+.conteudo1 p{
+    padding-bottom: 25px;  
+}
+
+.spoiler{
+    width: 100%;
+    padding: 10px 10px 40px 80px;
+    font-size: 23px;
+}
+
+.conteudo-do-gif{
+    width: 50%;
+    padding: 10px 10px 10px 80px;
+}
+
+.conteudo-do-gif h2{
+    padding-bottom: 25px;
+    font-size: 32px;
+}
+
+.conteudo-do-gif p{
+    padding-bottom: 25px;
+}
+
+.container-gif{
+    width: 50%;
+    position: relative;
+}
+
+#Viserion{
+    position: absolute;
+    display: flex;
+    left: 9%;
+    top:8%;
+    width: 515px;
+}
+
+.container-mae-gif{
+    display: flex;
+}
+
+/* Abaixo video e titulo do video*/
+
+.tituloevideo{
+    width: 100%;
+    display: block;
+    padding-bottom: 50px;
+}
+
+.tituloevideo h2 {
+    text-align: center;
+    padding: 60px 0px 40px 0px;
+    font-size: 23px;
+}
+
+.tituloevideo iframe{
+    display: block;
+    margin: auto;
+}
+
+.container-a{
+    width: 100%;
+    display: flex;
+    padding: 20px 70px 20px 80px;
+    position: relative;
+}
+
+.container-a p{
+    display: block;
+    width: 50%;
+    
+}
+
+.container-imga{
+    position: absolute;
+    left: 750px;
+    
+}
+
+.container-imga img{
+    border: solid 2px white ;
+}
+
+
+
+.container-b{
+    width: 100%;
+    display: flex;
+    padding: 20px 70px 20px 80px;
+    position: relative;
+    
+}
+
+.containerimg-b{
+    position: absolute;
+    left: 750px;
+    
+}
+
+.containerimg-b img{
+    border: solid 2px white ;
+}
+
+.container-b p{
+    display: block;
+    width: 50%;   
+    
+}
+
+#armas{
+    padding: 20px 70px 25px 80px;
+    font-size: 32px;
+    
+}
+
+.final{
+    padding: 20px 70px 80px 80px;
+}
 
 .secao4{
     background-color: #3B373F;
     color: white;
     padding: 0px 75px 75px 75px;
     line-height: 25px;
-}
-
-.secao4 h2{
-    margin-bottom: 20px;
-}
-
-.container-core{
-    display: flex;
-}
-
-.secao5{
-    background-color: #3B373F;
-    color: white;
-    padding: 0px 75px 75px 75px;
-    line-height: 25px;
-}
-
-#titulo-video{
-    text-align: center;
-    padding-bottom:60px;
-}
-
-iframe{
-    display: block;
-    margin: auto;
-    width: 65%;
-    height: 475px;
-    padding-bottom: 85px;
-}
-
-.secao5 h2{
-    margin-bottom: 20px;
-}
-
-.adaga{
-    display: flex;
-    padding-bottom: 35px;
     
 }
 
-.espada{
-    display: flex;
-    padding-bottom: 35px;
-}
-
-
-
 footer{
     width: 100%;
-    background-color: #3B373F;
     display: flex;
     justify-content: center;
-    height: 110px;
+    height: 150px;
+    padding-bottom: 40px;
 }
 
+.img-footer{
+    width: 270px;  
+}
 
-
-
+.cor-bg{
+    background-image: linear-gradient(to right, #3B373F, #000000)
+}
