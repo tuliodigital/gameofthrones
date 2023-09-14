@@ -1,0 +1,107 @@
+.body{
+    font-family: playfair display; 
+       
+}
+
+.headerContainer{
+    background-color: #3B373F;
+    width: 100%;
+    height: 100px;
+
+}
+
+.gridContainer{
+    background:#3B373F;
+    display: grid;
+    grid-template-columns: 400px 600px 150px 200px 150px 150px;
+      
+}
+
+.gridItem{
+    font-size: 16px;
+    padding: 20px;
+}
+
+.gridItem a{
+    color: white;
+    text-decoration: none;
+    font-size: 24px; 
+}
+
+.gridItem a:hover{
+    color:#8A8A8A;    
+}
+
+.gridItem img-logo{
+    padding: 20px 30px;
+}
+
+.wrapper-main{
+    background-image:url(Imagens/Mask\ group.png);
+    background-size: cover;
+    display: flex;
+    height: 700px;
+    justify-content:flex-start;
+    align-items:flex-end;
+    flex-direction: column;   
+}
+
+.wrapper-main div{
+    color: white;
+    width: 50%;
+}
+
+.Titulo {
+    font-size: 24px;        
+}
+
+ .Paragrafo {
+    font-size: 1.5rem;     
+ }
+
+.wrapper-personagens {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-personagens{
+    display: grid;
+    grid-template-areas:
+    "section section section section"
+    "section section section section"
+    "section section section section"
+    "section section section section" ;
+    
+}
+
+.card-personagens{
+   text-align: center;
+   padding: 20px;
+}
+
+.card-personagens h3{
+    font-size: 26px;
+}
+
+.card-personagens p{
+    font-size: 20px;
+}
+
+    
+.wrapper-ftr {
+    background-color: #3B373F;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-ftr {
+    height: 200px;
+    display: block;
+    margin: auto;
+    display: flex;
+    justify-content: center;   
+}
