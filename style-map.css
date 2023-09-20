@@ -14,21 +14,50 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 120px;
+    height: 80px;
     z-index: 1;
 }
 
 .logo{
-    width: 230px;
+    width: 200px;
     margin-left: 50px; 
 }
 
+header {
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0);
+    background-image: linear-gradient(to right, #3B373F, #000000);
+    position: flex;
+    width: 100%;
+    top: 0;
+   }
+   
+   header, nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 20px 20px;
+   }
+   
+   nav ul li {
+    margin-left: 1rem;
+   }
+
+   header ul li a{
+    text-decoration: none;
+    padding: 20px 20px 20px 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+
 #banner-principal{
     width: 100%;
-    display: block;
+    display: flex;
 }
 
 .titulo-banner{
+    display: flex;
     width: 40%;
     position: absolute;
     z-index: 1;
@@ -45,6 +74,7 @@
     }
     
     .descricao-map p{
+        display: flex;
         width: 40%;
         position: absolute;
         z-index: 1;
@@ -58,7 +88,7 @@
 #container-section2{
     width: 100%;
     position: relative;
-    display: block;
+    display: flex;
 }
 
 .interactive-map{
