@@ -14,23 +14,26 @@
     <meta name="author" content="Coder House">
 
     <link rel="stylesheet" href="CSS-ProjetoFinalGOT.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+ 
 
    </head>
 
 <body>
     
-    <header class="headerContainer">
-        <nav>
-            <div class="gridContainer"> 
-                <div class="gridItem"> <img src="Imagens/image 1.png" class="img-logo" alt="logotipo do Game Of Thrones"></div>
-                <div></div>   
-                <div class="gridItem"> <a href="casas.html">Casas</a></div>
-                <div class="gridItem"> <a href="personagens.html">Personagens</a></div>
-                <div class="gridItem"> <a href="Map.html">Mapas</a></div>
-                <div class="gridItem"> <a href="produtos.html">Produtos</a></div>
-                <div class="gridItem"> <a href="winter.html">Caminhantes</a></div>
-            </div>
-        </nav>   
+    <header class="header">
+        <a href="index.html"><img src="logo-got.png" alt="logo-game-of-thrones" class="logo"></a>
+            <nav>
+                    <button class="menu-resp">&#9776;</button>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="casas.html">Casas</a></li>
+                    <li><a href="personagens.html">Personagens</a></li>
+                    <li><a href="Map.html">Mapa</a></li>
+                    <li><a href="winter.html">Winter</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                </ul>
+            </nav>
     </header>
     
     
@@ -93,9 +96,11 @@
                 </div>
             </div>
 
-            <div class="BtnContainer">
+            <a href="personagens.html" ><button type="button" class="btn btn-primary btn-lg">Personagens</button></a>
+
+            <!-- <div class="BtnContainer">
                 <a href="personagens.html" target="_blank">Personagens</a>
-            </div>
+            </div> -->
 
         </section>
     </div>
@@ -119,11 +124,7 @@
                 <p>Considerada uma das casas mais ricas de Westeros, os Lannister são os senhores das terras ocidentais e os Guardiões do Oeste. Um lema importante para esta casa é “Um Lannister sempre paga suas dívidas”.</p>
             </article>
 
-        <div class="btn-wrapper">
-            <div class="BtnContainer">
-                <a href="casas.html" target="_blank">Casas</a>
-            </div>
-        </div>
+            <a href="casas.html" ><button type="button" class="btn btn-primary btn-lg">Casas</button></a>
 
         </section>
   
@@ -193,9 +194,7 @@
                 </div>     
             </div>
 
-            <div class="BtnContainer">
-            <a href="produtos.html" target="_blank">Produtos</a>
-            </div>
+            <a href="produtos.html" ><button type="button" class="btn btn-primary btn-lg">Produtos</button></a>
 
         </section>
     </div>
@@ -204,7 +203,7 @@
         <section class="BtnContainer">
             <!-- <img src="Imagens/image 15.png" alt="Mapa de Westeros"> -->
         
-            <a href="Map.html" target="_blank">Mapa</a>
+            <a href="Map.html" > <button type="button" class="btn btn-primary btn-lg">Mapa</button></a>
 
         </section>
     </div>
