@@ -122,16 +122,54 @@ height: 250px;
         transition: all 0.3s;
     }
 
+    .text-core{
+        position: absolute;
+        margin-top: -85px;
+        margin-left: -45px;
+
+    }
+
 }
     ;
 
 /*Fim do cabecalho*/
 
-
+/*Seção do banner*/
 .banner{
     grid-area: banner;
-    border:solid 1px
+    border:solid 1px;
+    position: relative;
 }
+
+.banner img{
+    width: 200%;
+}
+
+.text-core{
+   position: absolute;
+   top: 330px;
+   left: 140px;
+}
+
+.text-core h1{
+    font-size: 4rem;
+    color: white;
+}
+
+.text-core p{
+    font-size: 1.2rem;
+    margin-left: 0.8rem;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
 
 .artigo-a{
     grid-area:artigo-a;
