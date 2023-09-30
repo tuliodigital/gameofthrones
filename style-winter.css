@@ -1,213 +1,222 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
 
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
 
 /*Layout*/
 
-.grid{
-    display: grid;
-    grid-template-areas:
+.grid {
+  display: grid;
+  grid-template-rows: 1fr repeat(9);
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
     "header header"
     "banner banner"
     "artigo-a artigo-a"
     "artigo-gif gif"
     "video video"
     "artigo-b armas"
+    "artigo-b2 armas2"
     "artigo-sintese artigo-sintese"
     "rodape rodape";
-    grid-template-rows: 1fr repeat(8);
-    grid-template-columns: 1fr 1fr;
 }
 
 /*Cabecalho*/
 
-.header{
-    grid-area:header;
+.header {
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-image: linear-gradient(to right, #3b373f, #000000);
+}
+
+.logo {
+  width: 200px;
+}
+
+.header ul {
+  display: flex;
+  list-style: none;
+}
+
+.header ul li a {
+  text-decoration: none;
+  padding: 20px 20px 20px 20px;
+  color: white;
+  font-size: 15.5px;
+  font-family: Montserrat;
+  font-weight: 500;
+}
+
+nav ul li a {
+  position: relative;
+}
+
+nav ul li a::after {
+  content: " ";
+  width: 0px;
+  height: 3px;
+  background-image: linear-gradient(45deg, #2f2f2f, #d8d8d8);
+  position: absolute;
+  top: 45px;
+  left: 20px;
+  transition: width 0.7s;
+}
+nav ul li a:hover::after {
+  width: 40px;
+}
+
+nav ul li a:hover {
+  color: #bcbcbc;
+  transition: all 0.7s;
+}
+
+ul {
+  transition: all 0.8s;
+}
+
+.menu-resp {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 36px;
+  position: absolute;
+  right: 40px;
+  top: 35px;
+  display: none;
+}
+
+button:focus ~ ul {
+  height: 250px;
+}
+
+@media (max-width: 700px) {
+  header,
+  ul {
+    flex-direction: column;
+    align-items: unset;
+    padding-top: 10px;
+    text-align: center;
+  }
+  header {
+    height: auto;
+  }
+  ul {
+    margin: 0px;
+    height: 0px;
+    overflow: hidden;
+  }
+  li {
+    padding: 10px;
+  }
+  li,
+  ul {
+    width: 100%;
+  }
+  .menu-resp {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-image: linear-gradient(to right, #3B373F, #000000);
+  }
+
+  .menu-resp:hover {
+    color: rgb(126, 126, 126);
+    transition: all 0.3s;
+  }
 }
-
-.logo{
-    width: 200px;
-}
-
-.header ul{
-display: flex;
-list-style: none;
-}
-
-.header ul li a{
-    text-decoration: none;
-    padding: 20px 20px 20px 20px;
-    color: white;
-    font-size: 15.5px;
-    font-family: Montserrat;
-    font-weight: 500;
-}
-
-nav ul li a{
-    position: relative;
-}
-
-nav ul li a::after{
-   content: " ";
-   width: 0px;
-   height: 3px;
-   background-image: linear-gradient(45deg, #2f2f2f, #d8d8d8);
-   position: absolute;
-   top:45px;
-   left: 20px;
-   transition:width 0.7s;
-
-}
-nav ul li a:hover::after{
-    width: 40px;
-}
-
-nav ul li a:hover{
-    color: #bcbcbc;
-    transition: all 0.7s;
-}
-
-ul{ 
-    transition: all 0.8s;
-}
-
-.menu-resp{
-    background-color: transparent;
-    border: none;
-    color: white;
-    font-size: 36px;
-    position: absolute;
-    right:40px;
-    top:35px;
-    display: none;
-}
-
-button:focus ~ ul{
-height: 250px;
-}
-
-@media (max-width: 700px){
-    header, ul{
-        flex-direction: column;
-        align-items: unset;
-        padding-top: 10px;
-        text-align: center;}
-    header{
-        height: auto;
-    }
-    ul{
-        margin: 0px;
-        height: 0px;
-        overflow: hidden;
-    }
-    li{
-        padding: 10px;
-    }
-    li, ul{
-        width: 100%;
-    }
-    .menu-resp{
-        display: flex;
-    }
-
-    .menu-resp:hover{
-        color: rgb(126, 126, 126);
-        transition: all 0.3s;
-    }
-
-    .text-core{
-        position: absolute;
-        margin-top: -85px;
-        margin-left: -45px;
-
-    }
-
-}
-    ;
-
 /*Fim do cabecalho*/
 
 /*Seção do banner*/
-.banner{
-    grid-area: banner;
-    border:solid 1px;
-    position: relative;
+
+.banner {
+  grid-area: banner;
+  border: solid 1px;
+  position: relative;
 }
 
-.banner img{
-    width: 200%;
+.banner img {
+  width: 100%;
 }
 
-.text-core{
-   position: absolute;
-   top: 330px;
-   left: 140px;
+.text-core {
+  position: absolute;
+  top: 230px;
+  left: 140px;
 }
 
-.text-core h1{
-    font-size: 4rem;
-    color: white;
+.text-core h1 {
+  font-size: 4rem;
+  color: white;
 }
 
-.text-core p{
-    font-size: 1.2rem;
-    margin-left: 0.8rem;
-    color: white;
+.text-core p {
+  font-size: 1.2rem;
+  margin-left: 0.8rem;
+  color: white;
 }
 
+/* Fim da Seção do banner*/
 
-
-
-
-
-
-
-
-
-.artigo-a{
-    grid-area:artigo-a;
-    border:solid 1px
+.artigo-a {
+  grid-area: artigo-a;
+  border: solid 1px;
 }
 
-.artigo-gif{
-    grid-area:artigo-gif;
-    border:solid 1px
+.artigo-gif {
+  grid-area: artigo-gif;
+  border: solid 1px;
 }
 
-.gif{
-    grid-area: gif;
-    border:solid 1px
+.gif {
+  grid-area: gif;
+  border: solid 1px;
 }
 
-.video{
-    grid-area: video;
-    border:solid 1px
+.gif img {
+  width: 380px;
 }
 
-.artigo-b{
-    grid-area: artigo-b;
-    border:solid 1px
+.video {
+  grid-area: video;
+  border: solid 1px;
 }
 
-.armas{
-    grid-area: armas;
-    border:solid 1px
+.artigo-b {
+  grid-area: artigo-b;
+  border: solid 1px;
 }
 
-.artigo-sintese{
-    grid-area:artigo-sintese;
-    border:solid 1px
+.artigo-b2 {
+  grid-area: artigo-b2;
+  border: solid 1px;
 }
 
-.rodape{
-    grid-area:rodape;
-    border:solid 1px
+.armas {
+  grid-area: armas;
+  border: solid 1px;
 }
 
+.armas2 {
+  grid-area: armas2;
+  border: solid 1px;
+}
+
+.artigo-sintese {
+  grid-area: artigo-sintese;
+  border: solid 1px;
+}
+
+.rodape {
+  grid-area: rodape;
+  border: solid 1px;
+  background-image: linear-gradient(to right, #3b373f, #000000);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.rodape img {
+  width: 230px;
+  margin: 0 auto;
+}
