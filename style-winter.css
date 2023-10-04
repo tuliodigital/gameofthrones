@@ -93,6 +93,8 @@ button:focus ~ ul {
   height: 250px;
 }
 
+/*Fim do cabecalho*/
+
 @media (max-width: 700px) {
   header,
   ul {
@@ -112,8 +114,7 @@ button:focus ~ ul {
   li {
     padding: 10px;
   }
-  li,
-  ul {
+  li, ul {
     width: 100%;
   }
   .menu-resp {
@@ -124,14 +125,50 @@ button:focus ~ ul {
     color: rgb(126, 126, 126);
     transition: all 0.3s;
   }
+
+  #title {
+    font-size: 2.5rem;
+  }
+
+  #title-p {
+    font-size: 0.9rem;
+  }
+
+  .text-core{
+    margin-top:-120px;
+    margin-left:-75px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-rows: 1fr repeat(12);
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "banner"
+      "artigo-a"
+      "gif"
+      "artigo-gif"
+      "video"
+      "armas"
+      "artigo-b"
+      "armas2"
+      "artigo-b2"
+      "artigo-sintese"
+      "rodape";
+  }
+
+  .artigo-gif{
+    margin-top:30px;
+  }
+  
 }
-/*Fim do cabecalho*/
+
 
 /*Seção do banner*/
 
 .banner {
   grid-area: banner;
-  border: solid 1px;
   position: relative;
 }
 
@@ -148,63 +185,141 @@ button:focus ~ ul {
 .text-core h1 {
   font-size: 4rem;
   color: white;
+  transition: all 0.7s;
 }
 
 .text-core p {
   font-size: 1.2rem;
   margin-left: 0.8rem;
   color: white;
+  transition: all 0.7s;
 }
 
 /* Fim da Seção do banner*/
 
+/* Início do artigo a*/
+
+.citacao{
+  text-align: center;
+  padding: 20px;
+  font-size: 1.3rem;;
+}
+
 .artigo-a {
   grid-area: artigo-a;
-  border: solid 1px;
+  font-size: 1.1rem;
 }
+
+.artigo-a h2{
+  font-size: 1.9rem;
+  padding: 0px 50px 0px 50px;
+}
+
+.artigo-a p {
+  padding: 20px 50px 50px 50px;
+}
+
+.artigo-a cite{
+  display: inline-block;
+  margin-top: 15px;
+}
+
+#spoiler{
+  padding: 0px 50px 0px 50px;
+  margin-bottom:40px;
+}
+
+/*fim do artigo a*/
+
+/*Início do artigo gif*/
 
 .artigo-gif {
   grid-area: artigo-gif;
-  border: solid 1px;
+  font-size: 1.1rem;
 }
+
+.artigo-gif h2 {
+ font-size: 1.9rem;
+ padding: 0px 50px 0px 50px;
+}
+
+.artigo-gif p {
+  padding: 20px 50px 50px 50px;
+}
+
+/*fim do artigo gif*/
+
+/*Início do gif*/
 
 .gif {
   grid-area: gif;
-  border: solid 1px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .gif img {
   width: 380px;
 }
 
+/*fim do gif*/
+
 .video {
   grid-area: video;
-  border: solid 1px;
+  text-align: center;
+  
+}
+
+.video h2{
+  font-size: 2.4rem;
+}
+
+#title-video{
+  padding: 40px;
+}
+
+#title-armas{
+  margin-top: 20px;
+  padding: 20px;
 }
 
 .artigo-b {
   grid-area: artigo-b;
-  border: solid 1px;
+  padding: 20px 50px 20px 50px;
+  font-size: 1.1rem;
+ 
+  
 }
 
 .artigo-b2 {
   grid-area: artigo-b2;
-  border: solid 1px;
+  padding: 20px 50px 20px 50px;
+  font-size: 1.1rem;
+  
+  
 }
 
 .armas {
   grid-area: armas;
-  border: solid 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 }
 
 .armas2 {
   grid-area: armas2;
-  border: solid 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 }
 
 .artigo-sintese {
   grid-area: artigo-sintese;
-  border: solid 1px;
+  padding: 0px 50px 0px 50px;
+  font-size: 1.1rem;
+  margin-bottom: 35px;
 }
 
 .rodape {
