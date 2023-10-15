@@ -132,6 +132,7 @@ button:focus ~ ul {
 
   #title-p {
     font-size: 0.9rem;
+    
   }
 
   .text-core{
@@ -164,7 +165,6 @@ button:focus ~ ul {
   
 }
 
-
 /*Seção do banner*/
 
 .banner {
@@ -190,7 +190,7 @@ button:focus ~ ul {
 
 .text-core p {
   font-size: 1.2rem;
-  margin-left: 0.8rem;
+  margin-left: 0.6rem;
   color: white;
   transition: all 0.7s;
 }
@@ -216,7 +216,7 @@ button:focus ~ ul {
 }
 
 .artigo-a p {
-  padding: 20px 50px 50px 50px;
+  padding: 20px 50px 20px 50px;
 }
 
 .artigo-a cite{
@@ -224,10 +224,6 @@ button:focus ~ ul {
   margin-top: 15px;
 }
 
-#spoiler{
-  padding: 0px 50px 0px 50px;
-  margin-bottom:40px;
-}
 
 /*fim do artigo a*/
 
@@ -267,7 +263,6 @@ button:focus ~ ul {
 .video {
   grid-area: video;
   text-align: center;
-  
 }
 
 .video h2{
@@ -275,7 +270,7 @@ button:focus ~ ul {
 }
 
 #title-video{
-  padding: 40px;
+  padding: 30px 40px 60px 40px;
 }
 
 #title-armas{
@@ -286,17 +281,13 @@ button:focus ~ ul {
 .artigo-b {
   grid-area: artigo-b;
   padding: 20px 50px 20px 50px;
-  font-size: 1.1rem;
- 
-  
+  font-size: 1.1rem;  
 }
 
 .artigo-b2 {
   grid-area: artigo-b2;
   padding: 20px 50px 20px 50px;
   font-size: 1.1rem;
-  
-  
 }
 
 .armas {
@@ -304,7 +295,6 @@ button:focus ~ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 
 .armas2 {
@@ -312,7 +302,6 @@ button:focus ~ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 
 .artigo-sintese {
