@@ -1,4 +1,3 @@
-<script>
     function fetchQuotes() {
         const apiUrl = "https://api.gameofthronesquotes.xyz/v1/random/5";
 
@@ -25,4 +24,3 @@
     }
 
     window.addEventListener("load", fetchQuotes);
-</script>
