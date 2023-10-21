@@ -5,8 +5,14 @@
   margin: 0;
 }
 
-body{
-  font-family: 'Times New Roman', Times, serif;
+body {
+  font-family: PlayfairDisplay;
+  background-image: linear-gradient(to right, #3b373f, #000000);
+  color: white;
+}
+
+p{
+  font-family: PlayFairyDisplay;
 }
 
 /*Layout*/
@@ -95,7 +101,7 @@ ul {
 }
 
 button:focus ~ ul {
-  height: 250px;
+  height: 290px;
 }
 
 /*Fim do cabecalho*/
@@ -119,7 +125,8 @@ button:focus ~ ul {
   li {
     padding: 10px;
   }
-  li, ul {
+  li,
+  ul {
     width: 100%;
   }
   .menu-resp {
@@ -131,18 +138,21 @@ button:focus ~ ul {
     transition: all 0.3s;
   }
 
+  p {
+    font-size: 1.6rem;
+  }
+
   #title {
     font-size: 2.5rem;
   }
 
   #title-p {
     font-size: 0.9rem;
-    
   }
 
-  .text-core{
-    margin-top:-120px;
-    margin-left:-75px;
+  .text-core {
+    margin-top: -120px;
+    margin-left: -75px;
   }
 
   .grid {
@@ -164,10 +174,41 @@ button:focus ~ ul {
       "rodape";
   }
 
-  .artigo-gif{
-    margin-top:30px;
+  .artigo-gif {
+    margin-top: 30px;
   }
-  
+}
+
+@media (max-width: 600px) {
+  .text-core {
+    position: absolute;
+    top: 100px;
+  }
+
+  p {
+    font-size: 1.8rem;
+  }
+
+  q {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 2.0rem; /*NÃO FUNCIONANDO*/
+  }
+
+  #title{
+    font-size:2.9rem;
+  }
+
+  #title-p{
+    font-size:1.1rem;
+  }
+
+  .citacao{
+    padding:40px
+  }
+
 }
 
 /*Seção do banner*/
@@ -183,7 +224,7 @@ button:focus ~ ul {
 
 .text-core {
   position: absolute;
-  top: 230px;
+  top: 210px;
   left: 140px;
 }
 
@@ -204,10 +245,10 @@ button:focus ~ ul {
 
 /* Início do artigo a*/
 
-.citacao{
+.citacao {
   text-align: center;
   padding: 20px;
-  font-size: 1.3rem;;
+  font-size: 1.3rem;
 }
 
 .artigo-a {
@@ -215,7 +256,7 @@ button:focus ~ ul {
   font-size: 1.1rem;
 }
 
-.artigo-a h2{
+.artigo-a h2 {
   font-size: 1.9rem;
   padding: 0px 50px 0px 50px;
 }
@@ -224,11 +265,10 @@ button:focus ~ ul {
   padding: 20px 50px 20px 50px;
 }
 
-.artigo-a cite{
+.artigo-a cite {
   display: inline-block;
   margin-top: 15px;
 }
-
 
 /*fim do artigo a*/
 
@@ -240,8 +280,8 @@ button:focus ~ ul {
 }
 
 .artigo-gif h2 {
- font-size: 1.9rem;
- padding: 0px 50px 0px 50px;
+  font-size: 1.9rem;
+  padding: 0px 50px 0px 50px;
 }
 
 .artigo-gif p {
@@ -254,7 +294,7 @@ button:focus ~ ul {
 
 .gif {
   grid-area: gif;
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -265,28 +305,34 @@ button:focus ~ ul {
 
 /*fim do gif*/
 
+/*início da seção vídeo*/
+
 .video {
   grid-area: video;
   text-align: center;
 }
 
-.video h2{
+.video h2 {
   font-size: 2.4rem;
 }
 
-#title-video{
+#title-video {
   padding: 30px 40px 60px 40px;
 }
 
-#title-armas{
+#title-armas {
   margin-top: 20px;
   padding: 20px;
 }
 
+/*fim da seção vídeo*/
+
+/*Início das armas*/
+
 .artigo-b {
   grid-area: artigo-b;
   padding: 20px 50px 20px 50px;
-  font-size: 1.1rem;  
+  font-size: 1.1rem;
 }
 
 .artigo-b2 {
@@ -309,6 +355,10 @@ button:focus ~ ul {
   justify-content: center;
 }
 
+/*Fim das armas*/
+
+/*Linha de encerramento*/
+
 .artigo-sintese {
   grid-area: artigo-sintese;
   padding: 0px 50px 0px 50px;
@@ -316,9 +366,12 @@ button:focus ~ ul {
   margin-bottom: 35px;
 }
 
+/*fim da linha de encerramento*/
+
+/*Rodapé*/
+
 .rodape {
   grid-area: rodape;
-  border: solid 1px;
   background-image: linear-gradient(to right, #3b373f, #000000);
   justify-content: center;
   align-items: center;
@@ -329,3 +382,5 @@ button:focus ~ ul {
   width: 230px;
   margin: 0 auto;
 }
+
+/*Fim do rodapé*/
