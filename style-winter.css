@@ -384,3 +384,16 @@ button:focus ~ ul {
 }
 
 /*Fim do rodapé*/
+
+/*Exercício JS*/
+#got{
+  color: grey;
+}
+
+#botao1{
+  width: 150px;
+  padding: 20px 20px 20px 20px;
+  margin: 0px 50px 0px 50px;
+
+
+}
